@@ -126,6 +126,7 @@ And notice the $geoWithin filter that got added to our query:
 ![](images/geowithin.png)
 
 Finally, click   ANALYZE  again and click the Documents tab to view the Chinese restaurants in our selected radius in Staten Island:
+
 ![](images/georesults.png)
 
 #### Lab 7 - Create a Microservice
@@ -136,7 +137,7 @@ Stitch is a serverless platform, where functions written in JavaScript automatic
 Name the application Workshop. The other defaults are fine:
 ![](images/createstitchapp.png)
 
-Click Create, which will take you to the Welcome to Stich! page.
+Click Create, which will take you to the Welcome to Stitch! page.
 
 #### Create the Function
 Now we’ll create the function that queries restaurants by name. Click Functions on the left and then Create New Function. Name the function getRestaurantsByName:
