@@ -147,17 +147,17 @@ Click Save, which will open the Function Editor.
 
 Replace the example code in the editor with the following:
 ````
-exports = async function(arg){
+exports = function(arg) {
+
+  console.log("getRestaurantsByName function called.");
 
   var collection = context.services
     .get("mongodb-atlas").db("Workshop").collection("Restaurants");
-  var doc = await collection.findOne({name: arg});
-  if (typeof doc == "undefined") {
-    return `No restaurants named ${arg} were found.`;
-  }
+    
+  var doc = collection.findOne({name: arg});
   
   return doc;
-}
+};
 ````
 In the Console below the editor, change the argument from ‘Hello world’ to ’Chef Hong’:
 ![](images/searchChefHong.png)
